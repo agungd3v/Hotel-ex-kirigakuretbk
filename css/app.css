@@ -307,3 +307,29 @@ h3 {
         padding: 0 5px !important;
     }
 }
+
+footer {
+    background-color: rgb(27, 27, 27);
+    color: #fff;
+    display: flex;
+    padding: 50px 0;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer a span {
+    color: var(--pink);
+}
+
+footer p {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+}
