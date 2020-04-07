@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+    --pink: #fd7792;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: white !important;
+    padding: 1.3% 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.navbar-brand span {
+    color: var(--pink);
+}
+
+.navbar-nav a {
+    color: #645e53 !important;
+    margin-left: 10px;
+    transition: color .3s ease;
+}
+
+.navbar-nav a:hover {
+    color: var(--pink) !important;
+}
+
+.navbar a {
+    position: relative;
+}
+
+.navbar-nav a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 1.5px solid var(--pink);
+}
+
+.navbar-nav a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 1.5px solid var(--pink);
+}
+
+.btn-pink {
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background-color: var(--pink);
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.btn-pink:hover {
+    color: pink;
+    border: 1px solid var(--pink);
+    background-color: white;
+}
+
+#rent-now h6 {
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+#rent-now {
+    background-image: url('../img/rent/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 50px;
+    position: relative;
+}
+
+#rent-now .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+#rent-now::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .2;
+    z-index: 0;
+}
+
+#rent-now h1,
+#rent-now p {
+    color: white;
+}
+
+#rent-now h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+#rent-now a,
+#panel a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--pink);
+    color: white;
+    background-color: var(--pink);
+    transition: all .2s ease;
+}
+
+#rent-now a:hover,
+#panel a:hover {
+    color: var(--pink);
+    background-color: transparent;
+    transition: all .2s ease;
+}
+
+#panel {
+    background-color: white;
+}
+
+#panel .card {
+    border: none;
+    box-shadow: 0px 10px 27px -9px rgba(0, 0, 0, 0.11);
+    position: relative;
+    top: -20%;
+}
+
+#panel .card .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#panel .card .card-body .card-title {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+#panel .card .card-body .card-text {
+    color: gray;
+}
+
+#panel a {
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+#rooms {
+    padding: 100px 0;
+}
+
+#rooms .room,
+.rooms {
+    padding: 0;
+    background-color: white;
+    transition: all .3s ease;
+}
+
+#rooms .room img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.room:hover+.rooms,
+.rooms:hover {
+    background-color: var(--pink);
+}
+
+.room:hover+.rooms .stars i,
+.room:hover+.rooms .room-detail,
+.rooms:hover .stars i,
+.rooms:hover .room-detail {
+    color: white;
+}
+
+.stars {
+    padding: 10% 0;
+    margin-top: 12%;
+}
+
+.stars i {
+    color: var(--pink);
+    font-size: 10px;
+    transition: all .2s ease;
+}
+
+.room-detail h1 {
+    transition: all .2s ease;
+}
+
+.room-detail table {
+    width: 50%;
+    margin: 30px 0;
+    transition: all .2s ease;
+}
+
+.room-detail a {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    margin-top: 30px;
+    background-color: white;
+
+}
+
+#services {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#services img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#services h3 {
+    font-size: 50px;
+}
+
+#services h3:last-child {
+    font-size: 30px;
+    text-align: center;
+}
+
+.services-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--pink);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.services-icon i {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    #rent-now {
+        padding: 20px 0;
+    }
+
+    #rent-now .card {
+        margin-top: 30px;
+    }
+
+    #panel {
+        margin-top: 100px;
+        padding: unset;
+    }
+
+    #panel .px-4 {
+        padding: unset !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #panel .card {
+        margin-top: 10px;
+    }
+
+    #panel .px-4 {
+        padding: 0 5px !important;
+    }
+}
